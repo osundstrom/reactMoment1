@@ -1,10 +1,11 @@
-import Hobby from "./components/Hobby"
+import Movies from "./components/Movies"
+import Header from "./components/Header"
 
 function App() {
   return (
     <>
-        <h1>Moment 1</h1>
-        <Hobby/>
+        <Header/>
+        <Movies/>
     </>
   )
 }
