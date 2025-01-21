@@ -1,6 +1,6 @@
 import "../Movies.css";
 
-
+//funktion
 function Movies() {
 
     const allMovies: oneMovie[] = []; //en array med interface oneMovie
@@ -60,7 +60,7 @@ function Movies() {
     <div className="row g-2">
 
     {
-        
+        //Map igenom alla filmer i allMovies, skriver ut de olika värdena
         allMovies.map((movie) => (
             
            
@@ -86,5 +86,5 @@ function Movies() {
     </>   
     )
 }
-
+//exporterar
 export default Movies;

@@ -1,5 +1,6 @@
 import "../Footer.css";
 
+//funtion footer
 function Footer() {
 
 
