@@ -57,20 +57,20 @@ function Movies() {
     <div className="forMargin">
     <div className="container-md text-center">
         
-    <div className="row g-3">
+    <div className="row g-2">
 
     {
         
         allMovies.map((movie) => (
             
            
-    <div className="col-md-4">
-      <h4>{movie.title}</h4>
-      <p><b>Imdb:</b> {movie.rating}/10</p>
-      <p> <b>Sett:</b> {movie.watched ? (
+    <ul className="col-md-4">
+      <li style={{ fontSize: "130%", fontWeight: "bold", textDecoration: "underline", color: "000000"}}>{movie.title}</li>
+      <li><b>Imdb:</b> {movie.rating}/10</li>
+      <li> <b>Sett:</b> {movie.watched ? (
         <div className="yes">Ja</div>):(<div className="no" >Nej</div>
-        )}</p>
-    </div>
+        )}</li>
+    </ul>
    
 
 
