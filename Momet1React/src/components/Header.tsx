@@ -1,4 +1,4 @@
-
+import "../Header.css";
 
 function Header() {
 
@@ -7,7 +7,8 @@ function Header() {
         <>
 
     <header>
-        <h1></h1>
+        <h1>Moment 1 - Filmer</h1>
+        
     </header>
 
 

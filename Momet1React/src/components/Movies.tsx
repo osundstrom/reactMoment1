@@ -1,3 +1,6 @@
+import "../Movies.css";
+
+
 function Movies() {
 
     const allMovies: oneMovie[] = []; //en array med interface oneMovie
@@ -45,31 +48,31 @@ function Movies() {
 
     return (
         <>
+    <div className="forMargin">
+    <div className="container-md text-center">
+        
+    <div className="row g-3">
 
-        <div>
+    {
+        
+        allMovies.map((movie) => (
             
-                {
-                allMovies.map((movie) => (
-                    <ul>
-                    <li>
-                        {movie.title}
-                    </li>
+           
+    <div className="col-md-4">
+      <h4>{movie.title}</h4>
+      <p>Imdb: {movie.rating}/10</p>
+      <p> Sett: {movie.watched ? (
+        <div className="yes">Ja</div>):(<div className="no" >Nej</div>
+        )}</p>
+    </div>
+   
 
-                    <li>
-                        {movie.rating}
-                    </li>
 
-                    <li>
-                        {movie.watched ? (
-                        <div>Ja</div>):(<div>Nej</div>
-                        )}
-                    </li>
-
-                    </ul>
-                ))
-            }
-            
-        </div>
+        ))
+    }
+    </div>
+    </div>
+  </div>
 
 
 
