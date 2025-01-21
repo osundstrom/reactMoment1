@@ -1,0 +1,21 @@
+footer {
+    width: 100vw;
+    text-align: center;
+    background-color: rgba(223, 223, 223, 0.7);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid black;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover{
+    text-decoration: underline;
+    
+}

@@ -40,7 +40,13 @@ function Movies() {
             title: " Se7en",
             rating: 8.6,
             watched: false,
+        },
+        {
+            title: "Fight Club",
+            rating: 8.8,
+            watched: true,
         }
+
 
 
     );
@@ -60,8 +66,8 @@ function Movies() {
            
     <div className="col-md-4">
       <h4>{movie.title}</h4>
-      <p>Imdb: {movie.rating}/10</p>
-      <p> Sett: {movie.watched ? (
+      <p><b>Imdb:</b> {movie.rating}/10</p>
+      <p> <b>Sett:</b> {movie.watched ? (
         <div className="yes">Ja</div>):(<div className="no" >Nej</div>
         )}</p>
     </div>

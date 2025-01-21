@@ -1,21 +1,21 @@
 import "../Header.css";
 
-function Header() {
+interface Oneheadline {
+    headline: string;
+}
+
+function Header({headline}: Oneheadline) {
 
 
     return (
         <>
 
     <header>
-        <h1>Moment 1 - Filmer</h1>
-        
+        <h1>{headline}</h1>
     </header>
 
-
-
-
     </>   
-    )
+    );
 }
 
 export default Header;

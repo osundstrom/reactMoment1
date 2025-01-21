@@ -2,11 +2,18 @@
 .yes{
     color: green;
     display: inline-flex;
+    
 }
 
 .no{
     color: red;
     display: inline-flex;
+}
+
+h4{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    
 }
 
 
