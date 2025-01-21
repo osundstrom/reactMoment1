@@ -1,11 +1,12 @@
 footer {
     width: 100vw;
+    height: 5vh;
     text-align: center;
     background-color: rgba(223, 223, 223, 0.7);
     color: rgb(0, 0, 0);
-    position: absolute;
-    bottom: 0;
+    position: fixed;
     border-top: 1px solid black;
+    bottom: 0;
 }
 
 
