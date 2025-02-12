@@ -1,4 +1,5 @@
 import "../Movies.css";
+import Movie from "./OneMovie";
 
 //funktion
 function Movies() {
@@ -54,36 +55,21 @@ function Movies() {
 
     return (
         <>
-    <div className="forMargin">
-    <div className="container-md text-center">
-        
-    <div className="row g-2">
+            <div className="forMargin">
+                <div className="container-md text-center">
 
-    {
-        //Map igenom alla filmer i allMovies, skriver ut de olika värdena
-        allMovies.map((movie) => (
-            
-           
-    <ul className="col-md-4">
-      <li style={{ fontSize: "130%", fontWeight: "bold", textDecoration: "underline", color: "000000"}}>{movie.title}</li>
-      <li><b>Imdb:</b> {movie.rating}/10</li>
-      <li> <b>Sett:</b> {movie.watched ? (
-        <div className="yes">Ja</div>):(<div className="no" >Nej</div>
-        )}</li>
-    </ul>
-   
-
-
-        ))
-    }
-    </div>
-    </div>
-  </div>
+                    <section className="row g-2">
+                        {allMovies.map((movie) => ( //mapar ut alla filmer
+                            <Movie movie={movie} /> //skickar in i Movie
+                        ))}
+                    </section>
+                </div>
+            </div>
 
 
 
 
-    </>   
+        </>
     )
 }
 //exporterar
